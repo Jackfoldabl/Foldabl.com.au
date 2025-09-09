@@ -172,7 +172,7 @@ const organizationSchema \= {
 
 \#\#\# 8\. Enhance Location Pages  
 \*\*Prompt:\*\* "Expand each location page to 1,000+ words with unique local content including landmarks, traffic patterns, and weather impacts"  
-\*\*Objective:\*\* Create location pages that rank for "\[city\] diesel mechanic" searches  
+\*\*Objective:\*\* Create location pages thatadd to footer  rank for "\[city\] diesel mechanic" searches  
 \*\*Reasoning:\*\* Unique, detailed local content outranks thin location pages
 
 \*\*Content Framework:\*\*  
