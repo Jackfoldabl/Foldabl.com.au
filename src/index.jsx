@@ -21,6 +21,19 @@ import { Foldabl42 } from "./pages/models/Foldabl42";
 import { Expandabl20 } from "./pages/models/Expandabl20";
 import { TinyHomes } from "./pages/TinyHomes";
 import { ServiceAreas } from "./pages/ServiceAreas";
+import { Process } from "./pages/Process";
+import { About } from "./pages/About";
+import { Financing } from "./pages/Financing";
+import { Support } from "./pages/Support";
+import { TermsPrivacy } from "./pages/TermsPrivacy";
+import { Contact } from "./pages/Contact";
+import { Homes } from "./pages/Homes";
+import { FoldablSeries } from "./pages/series/FoldablSeries";
+import { ExpandablSeries } from "./pages/series/ExpandablSeries";
+import { ComingSoon } from "./pages/series/ComingSoon";
+import { AboutChris } from "./pages/AboutChris";
+import { Dach } from "./pages/Dach";
+import { ThirtyYears } from "./pages/ThirtyYears";
 
 createRoot(document.getElementById("app")).render(
   <StrictMode>
@@ -45,6 +58,19 @@ createRoot(document.getElementById("app")).render(
         <Route path="/homes/expandabl-20" element={<Expandabl20 />} />
         <Route path="/tiny-homes" element={<TinyHomes />} />
         <Route path="/service-areas" element={<ServiceAreas />} />
+        <Route path="/process" element={<Process />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/financing" element={<Financing />} />
+        <Route path="/support" element={<Support />} />
+        <Route path="/terms-privacy" element={<TermsPrivacy />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/homes" element={<Homes />} />
+        <Route path="/homes/foldabl-series" element={<FoldablSeries />} />
+        <Route path="/homes/expandabl-series" element={<ExpandablSeries />} />
+        <Route path="/homes/coming-soon" element={<ComingSoon />} />
+        <Route path="/about-chris" element={<AboutChris />} />
+        <Route path="/dach-constructions" element={<Dach />} />
+        <Route path="/30-years" element={<ThirtyYears />} />
       </Routes>
       {/* Sticky call button on mobile */}
       <a

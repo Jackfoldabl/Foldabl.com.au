@@ -147,6 +147,14 @@ export const ContactSection = () => {
                       return "/about";
                     case "Constructions Council Process":
                       return "/process";
+                    case "Financing Info":
+                      return "/financing";
+                    case "Available Australia-Wide":
+                      return "/service-areas";
+                    case "24/7 Support":
+                      return "/support";
+                    case "Terms and Privacy":
+                      return "/terms-privacy";
                     case "Foldäbl Series":
                     case "Expändäbl Series":
                     case "Coming Soon":
@@ -164,6 +172,10 @@ export const ContactSection = () => {
                 };
                 const href = (() => {
                   switch (link) {
+                    case "Financing Info": return "/financing";
+                    case "Available Australia-Wide": return "/service-areas";
+                    case "24/7 Support": return "/support";
+                    case "Terms and Privacy": return "/terms-privacy";
                     case "NSW": return "/homes/nsw";
                     case "QLD": return "/homes/qld";
                     case "VIC": return "/homes/vic";
@@ -176,9 +188,9 @@ export const ContactSection = () => {
                     case "Blogs & Guides": return "/blog";
                     case "Professional Builders": return "/about";
                     case "Constructions Council Process": return "/process";
-                    case "Foldäbl Series":
-                    case "Expändäbl Series":
-                    case "Coming Soon":
+                    case "Foldäbl Series": return "/homes/foldabl-series";
+                    case "Expändäbl Series": return "/homes/expandabl-series";
+                    case "Coming Soon": return "/homes/coming-soon";
                     case "All Homes": return "/homes";
                     default: return "#";
                   }
