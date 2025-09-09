@@ -51,6 +51,7 @@ site: 'https://calldieseldudes.com',
 *// astro.config.mjs*  
 integrations: \[  
  sitemap({  
+  
    customPages: \['https://calldieseldudes.com/diesel-mechanic'\],  
    serialize(*item*) {  
      if (item.url \=== 'https://calldieseldudes.com/') {  
