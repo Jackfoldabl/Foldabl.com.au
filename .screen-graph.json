@@ -1,0 +1,84 @@
+{
+  "nodes": [
+    {
+      "id": "src/screens/MobileHomepage/MobileHomepage.jsx",
+      "label": "MobileHomepage",
+      "routes": [
+        "/"
+      ],
+      "dataModelId": "44:1986",
+      "isRoot": true
+    },
+    {
+      "id": "src/pages/PillarModularHomes.jsx",
+      "label": "PillarModularHomes",
+      "routes": [
+        "/modular-homes"
+      ]
+    },
+    {
+      "id": "src/pages/BlogIndex.jsx",
+      "label": "BlogIndex",
+      "routes": [
+        "/blog"
+      ]
+    },
+    {
+      "id": "src/pages/BlogPost.jsx",
+      "label": "BlogPost",
+      "routes": [
+        "/blog/:slug"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "src/pages/PillarModularHomes.jsx:224:14-to-src/screens/MobileHomepage/MobileHomepage.jsx",
+      "source": "src/pages/PillarModularHomes.jsx",
+      "target": "src/screens/MobileHomepage/MobileHomepage.jsx",
+      "data": {
+        "viaRoute": "/",
+        "trigger": {
+          "element": "<a href=\"/\" className=\"underline\">\n                Back to homepage\n              </a>",
+          "line": 224,
+          "endLine": 226,
+          "column": 14,
+          "endColumn": 18,
+          "sourceFile": "src/pages/PillarModularHomes.jsx"
+        }
+      }
+    },
+    {
+      "id": "src/pages/BlogPost.jsx:87:27-to-src/pages/BlogIndex.jsx",
+      "source": "src/pages/BlogPost.jsx",
+      "target": "src/pages/BlogIndex.jsx",
+      "data": {
+        "viaRoute": "/blog",
+        "trigger": {
+          "element": "<Link to=\"/blog\" className=\"underline\">blog</Link>",
+          "line": 87,
+          "endLine": 87,
+          "column": 27,
+          "endColumn": 77,
+          "sourceFile": "src/pages/BlogPost.jsx"
+        }
+      }
+    },
+    {
+      "id": "src/pages/BlogPost.jsx:115:10-to-src/pages/BlogIndex.jsx",
+      "source": "src/pages/BlogPost.jsx",
+      "target": "src/pages/BlogIndex.jsx",
+      "data": {
+        "viaRoute": "/blog",
+        "trigger": {
+          "element": "<Link to=\"/blog\" className=\"underline\">← Back to Blogs & Guides</Link>",
+          "line": 115,
+          "endLine": 115,
+          "column": 10,
+          "endColumn": 80,
+          "sourceFile": "src/pages/BlogPost.jsx"
+        }
+      }
+    }
+  ]
+}
