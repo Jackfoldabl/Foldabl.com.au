@@ -62,9 +62,9 @@ export const TestimonialsSection = () => {
           ))}
         </div>
 
-        <button
+        <a
+          href="/#contact"
           className="flex items-center justify-between pl-[19.8px] pr-[5.4px] py-[5.4px] relative self-stretch w-full flex-[0_0_auto] bg-collection-1-light rounded-[14.4px] hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-collection-1-button focus:ring-offset-2 focus:ring-offset-[#151a22] transition-all duration-200"
-          type="button"
           aria-label="Start your building project"
         >
           <span className="relative w-fit [font-family:'Poppins',Helvetica] font-medium text-collection-1-dark text-[14.4px] tracking-[-0.86px] leading-[21.6px] whitespace-nowrap">
@@ -79,7 +79,7 @@ export const TestimonialsSection = () => {
               aria-hidden="true"
             />
           </div>
-        </button>
+        </a>
       </div>
 
       <img

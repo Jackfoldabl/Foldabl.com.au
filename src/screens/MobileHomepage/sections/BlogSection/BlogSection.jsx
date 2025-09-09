@@ -98,7 +98,8 @@ export const BlogSection = () => {
           </a>
         </div>
 
-        <button
+        <a
+          href="tel:+61480758298"
           className="flex w-[43.2px] h-[43.2px] items-center justify-center gap-[7.2px] relative bg-collection-1-button rounded-[8.1px] aspect-[1] hover:opacity-90 transition-opacity"
           aria-label="Call us at 0480 758 298"
         >
@@ -107,7 +108,7 @@ export const BlogSection = () => {
             alt=""
             src="/img/phone-enabled.png"
           />
-        </button>
+        </a>
       </div>
 
       <div className="flex flex-col w-[342px] items-start absolute top-[418px] left-6 rounded-2xl border border-solid border-[#5f6b7b4c]">

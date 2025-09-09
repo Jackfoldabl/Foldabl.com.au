@@ -81,7 +81,7 @@ export const ContactSection = () => {
           </p>
 
           <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-            <button className="flex items-center justify-between pl-[19.8px] pr-[5.4px] py-[5.4px] relative self-stretch w-full flex-[0_0_auto] bg-collection-1-light rounded-[14.4px] hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-collection-1-button focus:ring-offset-2 focus:ring-offset-[#151a22]">
+            <a href="/#contact" className="flex items-center justify-between pl-[19.8px] pr-[5.4px] py-[5.4px] relative self-stretch w-full flex-[0_0_auto] bg-collection-1-light rounded-[14.4px] hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-collection-1-button focus:ring-offset-2 focus:ring-offset-[#151a22]">
               <span className="relative w-fit [font-family:'Poppins',Helvetica] font-medium text-collection-1-dark text-[14.4px] tracking-[-0.86px] leading-[21.6px] whitespace-nowrap">
                 FREE CONSULTATION
               </span>
@@ -93,7 +93,7 @@ export const ContactSection = () => {
                   src="/img/arrow-outward-11.png"
                 />
               </div>
-            </button>
+            </a>
 
             <a
               href="tel:+61480758298"

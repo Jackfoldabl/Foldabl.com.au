@@ -240,7 +240,7 @@ export const MobileHomepage = () => {
                       0480 758 298
                     </a>
 
-                    <button className="inline-flex items-center gap-[11.2px] pl-[15.4px] pr-[3.8px] py-[3.8px] relative flex-[0_0_auto] bg-collection-1-light rounded-[9.6px] hover:bg-opacity-90 transition-all">
+                    <a href="/#contact" className="inline-flex items-center gap-[11.2px] pl-[15.4px] pr-[3.8px] py-[3.8px] relative flex-[0_0_auto] bg-collection-1-light rounded-[9.6px] hover:bg-opacity-90 transition-all">
                       <span className="text-sm tracking-[-0.84px] leading-[21px] relative w-fit [font-family:'Poppins',Helvetica] font-medium text-collection-1-dark whitespace-nowrap">
                         Get Free Consultation
                       </span>
@@ -252,7 +252,7 @@ export const MobileHomepage = () => {
                           src="/img/arrow-outward-13.png"
                         />
                       </div>
-                    </button>
+                    </a>
                   </div>
                 </nav>
 
@@ -262,7 +262,7 @@ export const MobileHomepage = () => {
                   </h1>
 
                   <div className="w-[569px] flex items-start gap-2 relative flex-[0_0_auto]">
-                    <button className="flex items-center justify-between pl-[22px] pr-1.5 py-1.5 relative flex-1 grow bg-collection-1-light rounded-2xl hover:bg-opacity-90 transition-all">
+                    <a href="/#contact" className="flex items-center justify-between pl-[22px] pr-1.5 py-1.5 relative flex-1 grow bg-collection-1-light rounded-2xl hover:bg-opacity-90 transition-all">
                       <span className="text-base tracking-[-0.96px] leading-6 relative w-fit [font-family:'Poppins',Helvetica] font-medium text-collection-1-dark whitespace-nowrap">
                         Get Free Consultation
                       </span>
@@ -274,9 +274,9 @@ export const MobileHomepage = () => {
                           src="/img/arrow-outward-25.png"
                         />
                       </div>
-                    </button>
+                    </a>
 
-                    <button className="flex items-center justify-between pl-[22px] pr-1.5 py-1.5 relative flex-1 grow rounded-2xl border border-solid border-[#ffffff66] hover:bg-white hover:bg-opacity-10 transition-all">
+                    <a href="/homes" className="flex items-center justify-between pl-[22px] pr-1.5 py-1.5 relative flex-1 grow rounded-2xl border border-solid border-[#ffffff66] hover:bg-white hover:bg-opacity-10 transition-all">
                       <span className="relative w-fit [font-family:'Poppins',Helvetica] font-medium text-collection-1-light text-base tracking-[-0.96px] leading-6 whitespace-nowrap">
                         See Our Homes
                       </span>
@@ -288,7 +288,7 @@ export const MobileHomepage = () => {
                           src="/img/arrow-outward-17.png"
                         />
                       </div>
-                    </button>
+                    </a>
                   </div>
                 </div>
 
@@ -344,7 +344,7 @@ export const MobileHomepage = () => {
                       not approved.
                     </p>
 
-                    <button className="inline-flex items-center gap-8 pl-[22px] pr-1.5 py-1.5 relative flex-[0_0_auto] rounded-2xl border border-solid border-[#ffffff66] hover:bg-white hover:bg-opacity-10 transition-all">
+                    <a href="/council-approval" className="inline-flex items-center gap-8 pl-[22px] pr-1.5 py-1.5 relative flex-[0_0_auto] rounded-2xl border border-solid border-[#ffffff66] hover:bg-white hover:bg-opacity-10 transition-all">
                       <span className="text-collection-1-light relative w-fit [font-family:'Poppins',Helvetica] font-medium text-base tracking-[-0.96px] leading-6 whitespace-nowrap">
                         LEARN MORE
                       </span>
@@ -356,7 +356,7 @@ export const MobileHomepage = () => {
                           src="/img/arrow-outward-17.png"
                         />
                       </div>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </article>
@@ -379,7 +379,7 @@ export const MobileHomepage = () => {
                       builders.
                     </p>
 
-                    <button className="inline-flex items-center gap-8 pl-[22px] pr-1.5 py-1.5 relative flex-[0_0_auto] rounded-2xl border border-solid border-[#ffffff66] hover:bg-white hover:bg-opacity-10 transition-all">
+                    <a href="/installation" className="inline-flex items-center gap-8 pl-[22px] pr-1.5 py-1.5 relative flex-[0_0_auto] rounded-2xl border border-solid border-[#ffffff66] hover:bg-white hover:bg-opacity-10 transition-all">
                       <span className="text-collection-1-light relative w-fit [font-family:'Poppins',Helvetica] font-medium text-base tracking-[-0.96px] leading-6 whitespace-nowrap">
                         LEARN MORE
                       </span>
@@ -391,7 +391,7 @@ export const MobileHomepage = () => {
                           src="/img/arrow-outward-17.png"
                         />
                       </div>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </article>
@@ -493,7 +493,7 @@ export const MobileHomepage = () => {
                       </div>
 
                       {model.isComingSoon ? (
-                        <button
+                        <a href="/#contact"
                           className={`inline-flex h-[60px] items-center justify-center gap-8 px-[22px] py-1.5 relative flex-[0_0_auto] rounded-2xl border border-solid border-collection-1-dusk-steel hover:bg-collection-1-dusk-steel hover:bg-opacity-10 transition-all`}
                         >
                           <span className="relative w-fit [font-family:'Poppins',Helvetica] font-medium text-collection-1-dark text-base tracking-[-0.96px] leading-6 whitespace-nowrap">
@@ -505,7 +505,7 @@ export const MobileHomepage = () => {
                             alt="Notifications"
                             src="/img/notifications.png"
                           />
-                        </button>
+                        </a>
                       ) : (
                         <a href={model.href || "#"} className="inline-flex items-center justify-center gap-8 pl-[22px] pr-1.5 py-1.5 relative flex-[0_0_auto] rounded-2xl border border-solid border-collection-1-dusk-steel hover:bg-collection-1-dusk-steel hover:bg-opacity-10 transition-all">
                           <span className="relative w-fit [font-family:'Poppins',Helvetica] font-medium text-collection-1-dark text-base tracking-[-0.96px] leading-6 whitespace-nowrap">
@@ -609,7 +609,7 @@ ins',Helvetica] font-medium text-collection-1-dark text-base tracking-[-0.48px] 
                 and guide you through the process—no cost, no obligation.
               </p>
 
-              <button className="inline-flex items-center gap-4 pl-[22px] pr-1.5 py-1.5 absolute top-[341px] left-[501px] bg-collection-1-dark rounded-2xl hover:bg-opacity-90 transition-all">
+              <a href="tel:+61480758298" className="inline-flex items-center gap-4 pl-[22px] pr-1.5 py-1.5 absolute top-[341px] left-[501px] bg-collection-1-dark rounded-2xl hover:bg-opacity-90 transition-all">
                 <div className="inline-flex items-center gap-2 relative flex-[0_0_auto]">
                   <span className="relative w-fit mt-[-1.00px] [font-family:'Poppins',Helvetica] font-medium text-collection-1-light text-base tracking-[-0.96px] leading-6 whitespace-nowrap">
                     CALL US:
@@ -627,7 +627,7 @@ ins',Helvetica] font-medium text-collection-1-dark text-base tracking-[-0.48px] 
                     src="/img/phone-enabled-1.png"
                   />
                 </div>
-              </button>
+              </a>
 
               <div className="flex flex-col w-[1362px] h-[751px] items-start absolute top-[444px] left-[39px] rounded-[32px] border border-solid border-[#5f6b7b4c]">
                 <div className="flex items-center relative flex-1 self-stretch w-full grow border-b [border-bottom-style:solid] border-[#5f6b7b4c]">
@@ -754,7 +754,7 @@ ins',Helvetica] font-medium text-collection-1-dark text-base tracking-[-0.48px] 
                         </h3>
                       </div>
 
-                      <button className="inline-flex items-center justify-center gap-8 pl-[22px] pr-1.5 py-1.5 relative flex-[0_0_auto] rounded-2xl border border-solid border-collection-1-dusk-steel hover:bg-collection-1-dusk-steel hover:bg-opacity-10 transition-all">
+                      <a href="/#services" className="inline-flex items-center justify-center gap-8 pl-[22px] pr-1.5 py-1.5 relative flex-[0_0_auto] rounded-2xl border border-solid border-collection-1-dusk-steel hover:bg-collection-1-dusk-steel hover:bg-opacity-10 transition-all">
                         <span className="text-collection-1-dark relative w-fit [font-family:'Poppins',Helvetica] font-medium text-base tracking-[-0.96px] leading-6 whitespace-nowrap">
                           LEARN MORE
                         </span>
@@ -770,7 +770,7 @@ ins',Helvetica] font-medium text-collection-1-dark text-base tracking-[-0.48px] 
                             }
                           />
                         </div>
-                      </button>
+                      </a>
                     </div>
                   </article>
                 ))}
@@ -813,7 +813,7 @@ ins',Helvetica] font-medium text-collection-1-dark text-base tracking-[-0.48px] 
                   </div>
 
                   <div className="w-[649px] flex items-start gap-2 relative flex-[0_0_auto]">
-                    <button className="flex items-center justify-between pl-[22px] pr-1.5 py-1.5 relative flex-1 grow bg-collection-1-light rounded-2xl hover:bg-opacity-90 transition-all">
+                    <a href="/#contact" className="flex items-center justify-between pl-[22px] pr-1.5 py-1.5 relative flex-1 grow bg-collection-1-light rounded-2xl hover:bg-opacity-90 transition-all">
                       <span className="relative w-fit [font-family:'Poppins',Helvetica] font-medium text-collection-1-dark text-base text-center tracking-[-0.96px] leading-6 whitespace-nowrap">
                         GET FREE CONSULTATION
                       </span>
@@ -825,9 +825,9 @@ ins',Helvetica] font-medium text-collection-1-dark text-base tracking-[-0.48px] 
                           src="/img/arrow-outward-25.png"
                         />
                       </div>
-                    </button>
+                    </a>
 
-                    <button className="flex items-center justify-between pl-[22px] pr-1.5 py-1.5 relative flex-1 grow rounded-2xl border border-solid border-[#ffffff4c] hover:bg-white hover:bg-opacity-10 transition-all">
+                    <a href="tel:+61480758298" className="flex items-center justify-between pl-[22px] pr-1.5 py-1.5 relative flex-1 grow rounded-2xl border border-solid border-[#ffffff4c] hover:bg-white hover:bg-opacity-10 transition-all">
                       <div className="inline-flex items-center justify-center gap-1.5 relative flex-[0_0_auto]">
                         <span className="relative w-fit mt-[-1.00px] [font-family:'Poppins',Helvetica] font-medium text-collection-1-light text-base text-center tracking-[-0.96px] leading-6 whitespace-nowrap">
                           CALL US:
@@ -845,7 +845,7 @@ ins',Helvetica] font-medium text-collection-1-dark text-base tracking-[-0.48px] 
                           src="/img/phone-enabled-2.png"
                         />
                       </div>
-                    </button>
+                    </a>
                   </div>
                 </div>
 
@@ -976,7 +976,7 @@ ins',Helvetica] font-medium text-collection-1-dark text-base tracking-[-0.48px] 
                     </p>
                   </div>
 
-                  <button className="inline-flex items-center gap-10 pl-[22px] pr-1.5 py-1.5 relative flex-[0_0_auto] bg-collection-1-light rounded-2xl hover:bg-opacity-90 transition-all">
+                  <a href="/#contact" className="inline-flex items-center gap-10 pl-[22px] pr-1.5 py-1.5 relative flex-[0_0_auto] bg-collection-1-light rounded-2xl hover:bg-opacity-90 transition-all">
                     <span className="relative w-fit [font-family:'Poppins',Helvetica] font-medium text-collection-1-dark text-base tracking-[-0.96px] leading-6 whitespace-nowrap">
                       START YOUR PROJECT
                     </span>
@@ -988,7 +988,7 @@ ins',Helvetica] font-medium text-collection-1-dark text-base tracking-[-0.48px] 
                         src="/img/arrow-outward-26.png"
                       />
                     </div>
-                  </button>
+                  </a>
                 </div>
 
                 <img

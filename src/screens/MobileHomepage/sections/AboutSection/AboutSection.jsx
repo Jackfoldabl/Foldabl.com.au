@@ -17,14 +17,14 @@ export const AboutSection = () => {
       text: "Get Free Consultation",
       variant: "primary",
       icon: "/img/arrow-outward-11.png",
-      onClick: () => console.log("Free consultation clicked"),
+      href: "/#contact",
     },
     {
       id: 2,
       text: "See Our Homes",
       variant: "secondary",
       icon: "/img/arrow-outward-12.png",
-      onClick: () => console.log("See our homes clicked"),
+      href: "/homes",
     },
   ];
 
@@ -32,11 +32,7 @@ export const AboutSection = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const handleButtonClick = (buttonAction) => {
-    if (typeof buttonAction === "function") {
-      buttonAction();
-    }
-  };
+  const handleButtonClick = () => {};
 
   return (
     <section
@@ -124,15 +120,15 @@ export const AboutSection = () => {
 
           <div className="flex flex-col w-[342px] items-start gap-2 absolute top-[659px] left-6">
             {ctaButtons.map((button) => (
-              <button
+              <a
                 key={button.id}
+                href={button.href}
                 className={`flex items-center justify-between pl-[19.8px] pr-[5.4px] py-[5.4px] relative self-stretch w-full flex-[0_0_auto] transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-collection-1-button focus:ring-offset-2 ${
                   button.variant === "primary"
                     ? "bg-collection-1-light rounded-[14.4px]"
                     : "rounded-[14.4px] border-[0.9px] border-solid border-[#ffffff66] hover:border-collection-1-light"
                 }`}
                 onClick={() => handleButtonClick(button.onClick)}
-                type="button"
                 aria-label={button.text}
               >
                 <span
@@ -159,7 +155,7 @@ export const AboutSection = () => {
                     role="presentation"
                   />
                 </div>
-              </button>
+              </a>
             ))}
           </div>
 

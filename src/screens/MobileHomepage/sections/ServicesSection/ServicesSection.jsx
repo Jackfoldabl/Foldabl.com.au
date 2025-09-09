@@ -69,7 +69,8 @@ export const ServicesSection = () => {
                 </h3>
               </div>
 
-              <button
+              <a
+                href="/#services"
                 className={`${
                   index === 0
                     ? "flex items-center justify-between pl-[22px] pr-1.5 py-1.5 relative self-stretch w-full flex-[0_0_auto] rounded-2xl border border-solid border-collection-1-dusk-steel"
@@ -114,7 +115,7 @@ export const ServicesSection = () => {
                     }
                   />
                 </div>
-              </button>
+              </a>
             </div>
           </article>
         ))}

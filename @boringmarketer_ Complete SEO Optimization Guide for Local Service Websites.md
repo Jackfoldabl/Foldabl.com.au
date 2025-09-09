@@ -172,7 +172,7 @@ const organizationSchema \= {
 
 \#\#\# 8\. Enhance Location Pages  
 \*\*Prompt:\*\* "Expand each location page to 1,000+ words with unique local content including landmarks, traffic patterns, and weather impacts"  
-\*\*Objective:\*\* Create location pages thatadd to footer  rank for "\[city\] diesel mechanic" searches  
+\*\*Objective:\*\* Create location pages thatadd to footer keep rank for "\[city\] diesel mechanic" searches  
 \*\*Reasoning:\*\* Unique, detailed local content outranks thin location pages
 
 \*\*Content Framework:\*\*  
@@ -205,7 +205,7 @@ const organizationSchema \= {
 
 \#\#\# 9\. Fix Local SEO Errors  
 \*\*Prompt:\*\* "Fix all location-related SEO issues from SEMrush audit"  
-\*\*Objective:\*\* Ensure consistent NAP (Name, Address, Phone) across the site  
+\*\*Objective:\*\* Enplease analsure consistent NAP (Name, Address, Phone) across the site  
 \*\*Reasoning:\*\* Inconsistent business information hurts local rankings
 
 \*\*Fixes Applied:\*\*  
