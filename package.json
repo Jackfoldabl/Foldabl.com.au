@@ -9,7 +9,8 @@
     "gen:sitemap": "node scripts/generate-sitemap.mjs",
     "prebuild": "npm run gen:sitemap",
     "build": "vite build",
-    "postbuild": "sh -c 'if [ \"$PRERENDER\" != \"false\" ]; then react-snap; else echo Skipping prerender; fi'"
+    "build:vercel": "npm run gen:sitemap && vite build",
+    "postbuild": "sh -c 'if [ \"$PRERENDER\" = \"true\" ]; then react-snap; else echo Skipping prerender; fi'"
   },
   "dependencies": {
     "clsx": "2.1.1",
