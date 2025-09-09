@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { findPostBySlug } from "../blog";
+import { setSeoTags } from "../lib/seo";
 
 export const BlogPost = () => {
   const { slug } = useParams();
@@ -8,11 +9,13 @@ export const BlogPost = () => {
 
   useEffect(() => {
     if (!post) return;
-    document.title = `${post.title} | Foldabl Homes`;
-    // Update canonical
-    const canonicalHref = `https://foldabl.com/blog/${post.slug}`;
-    const link = document.querySelector("link[rel=canonical]");
-    if (link) link.setAttribute("href", canonicalHref);
+    const canonicalHref = `https://foldabl.com.au/blog/${post.slug}`;
+    setSeoTags({
+      title: `${post.title} | Foldabl Homes`,
+      description: post.description,
+      url: canonicalHref,
+      image: post.hero ? `https://foldabl.com.au${post.hero}` : undefined,
+    });
 
     // Inject Article JSON-LD
     const ld = document.createElement("script");
@@ -23,14 +26,14 @@ export const BlogPost = () => {
       "@type": "Article",
       headline: post.title,
       description: post.description,
-      image: post.hero ? `https://foldabl.com${post.hero}` : undefined,
+      image: post.hero ? `https://foldabl.com.au${post.hero}` : undefined,
       author: { "@type": "Organization", name: "Foldabl Homes" },
       publisher: {
         "@type": "Organization",
         name: "Foldabl Homes",
         logo: {
           "@type": "ImageObject",
-          url: "https://foldabl.com/img/screenshot-2025-09-05-at-1-06-33-am-1.png",
+          url: "https://foldabl.com.au/img/screenshot-2025-09-05-at-1-06-33-am-1.png",
         },
       },
       datePublished: post.datePublished,

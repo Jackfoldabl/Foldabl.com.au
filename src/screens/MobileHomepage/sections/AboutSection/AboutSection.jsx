@@ -14,14 +14,14 @@ export const AboutSection = () => {
   const ctaButtons = [
     {
       id: 1,
-      text: "FREE CONSULTATION",
+      text: "Get Free Consultation",
       variant: "primary",
       icon: "/img/arrow-outward-11.png",
       onClick: () => console.log("Free consultation clicked"),
     },
     {
       id: 2,
-      text: "SEE OUR HOMES",
+      text: "See Our Homes",
       variant: "secondary",
       icon: "/img/arrow-outward-12.png",
       onClick: () => console.log("See our homes clicked"),
@@ -102,6 +102,11 @@ export const AboutSection = () => {
                     </a>
                   </li>
                 ))}
+                <li className="pt-2 border-t border-white/20 mt-2">
+                  <a href="tel:+61480758298" className="block py-2 text-collection-1-light hover:text-collection-1-button transition-colors">
+                    Call 0480 758 298
+                  </a>
+                </li>
               </ul>
             </nav>
           )}

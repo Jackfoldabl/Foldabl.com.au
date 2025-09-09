@@ -1,68 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://foldabl.com/</loc>
-    <lastmod>2025-09-09T06:00:41.943Z</lastmod>
+    <loc>https://foldabl.com.au/</loc>
+    <lastmod>2025-09-09T23:03:42.995Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://foldabl.com/about</loc>
-    <lastmod>2025-09-09T06:00:41.943Z</lastmod>
+    <loc>https://foldabl.com.au/about</loc>
+    <lastmod>2025-09-09T23:03:42.995Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://foldabl.com/process</loc>
-    <lastmod>2025-09-09T06:00:41.943Z</lastmod>
+    <loc>https://foldabl.com.au/process</loc>
+    <lastmod>2025-09-09T23:03:42.995Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://foldabl.com/installation</loc>
-    <lastmod>2025-09-09T06:00:41.943Z</lastmod>
+    <loc>https://foldabl.com.au/installation</loc>
+    <lastmod>2025-09-09T23:03:42.995Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://foldabl.com/homes</loc>
-    <lastmod>2025-09-09T06:00:41.943Z</lastmod>
+    <loc>https://foldabl.com.au/homes</loc>
+    <lastmod>2025-09-09T23:03:42.995Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://foldabl.com/service-areas</loc>
-    <lastmod>2025-09-09T06:00:41.943Z</lastmod>
+    <loc>https://foldabl.com.au/service-areas</loc>
+    <lastmod>2025-09-09T23:03:42.995Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://foldabl.com/modular-homes</loc>
-    <lastmod>2025-09-09T06:00:41.943Z</lastmod>
+    <loc>https://foldabl.com.au/modular-homes</loc>
+    <lastmod>2025-09-09T23:03:42.995Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://foldabl.com/blog</loc>
-    <lastmod>2025-09-09T06:00:41.943Z</lastmod>
+    <loc>https://foldabl.com.au/council-approval</loc>
+    <lastmod>2025-09-09T23:03:42.995Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://foldabl.com/blog/emergency-modular-homes-australia</loc>
-    <lastmod>2025-09-09T06:00:41.943Z</lastmod>
+    <loc>https://foldabl.com.au/homes/nsw</loc>
+    <lastmod>2025-09-09T23:03:42.995Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://foldabl.com/blog/council-approval-checklist-nsw-qld-vic</loc>
-    <lastmod>2025-09-09T06:00:41.943Z</lastmod>
+    <loc>https://foldabl.com.au/homes/qld</loc>
+    <lastmod>2025-09-09T23:03:42.995Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://foldabl.com/blog/prefab-vs-kit-homes-australia</loc>
-    <lastmod>2025-09-09T06:00:41.943Z</lastmod>
+    <loc>https://foldabl.com.au/homes/vic</loc>
+    <lastmod>2025-09-09T23:03:42.995Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foldabl.com.au/homes/foldabl-studio</loc>
+    <lastmod>2025-09-09T23:03:42.995Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foldabl.com.au/homes/foldabl-42</loc>
+    <lastmod>2025-09-09T23:03:42.995Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foldabl.com.au/homes/expandabl-20</loc>
+    <lastmod>2025-09-09T23:03:42.995Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foldabl.com.au/blog</loc>
+    <lastmod>2025-09-09T23:03:42.995Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foldabl.com.au/blog/emergency-modular-homes-australia</loc>
+    <lastmod>2025-09-09T23:03:42.995Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foldabl.com.au/blog/council-approval-checklist-nsw-qld-vic</loc>
+    <lastmod>2025-09-09T23:03:42.995Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foldabl.com.au/blog/prefab-vs-kit-homes-australia</loc>
+    <lastmod>2025-09-09T23:03:42.995Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

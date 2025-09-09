@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://foldabl.com/sitemap.xml
-
+Sitemap: https://foldabl.com.au/sitemap.xml

@@ -80,7 +80,7 @@ export const FeaturesSection = () => {
               </div>
             </div>
 
-            <button className="flex items-center justify-between pl-[22px] pr-1.5 py-1.5 relative self-stretch w-full flex-[0_0_auto] rounded-2xl border border-solid border-collection-1-dusk-steel hover:bg-collection-1-light-medium transition-colors duration-200">
+            <a href="/homes" className="flex items-center justify-between pl-[22px] pr-1.5 py-1.5 relative self-stretch w-full flex-[0_0_auto] rounded-2xl border border-solid border-collection-1-dusk-steel hover:bg-collection-1-light-medium transition-colors duration-200">
               <span className="relative w-fit [font-family:'Poppins',Helvetica] font-medium text-collection-1-dark text-[14.4px] tracking-[-0.86px] leading-[21.6px] whitespace-nowrap">
                 SEE OUR HOMES
               </span>
@@ -92,7 +92,7 @@ export const FeaturesSection = () => {
                   src={home.arrowImage}
                 />
               </div>
-            </button>
+            </a>
           </div>
         </article>
       ))}

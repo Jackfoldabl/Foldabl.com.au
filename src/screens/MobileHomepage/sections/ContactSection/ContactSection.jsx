@@ -129,7 +129,30 @@ export const ContactSection = () => {
               </h3>
 
               {section.links.map((link, linkIndex) => {
-                const href = link === "Blogs & Guides" ? "/blog" : "#";
+                const mapHref = (text) => {
+                  switch (text) {
+                    case "Blogs & Guides":
+                      return "/blog";
+                    case "Professional Builders":
+                      return "/about";
+                    case "Constructions Council Process":
+                      return "/process";
+                    case "Foldäbl Series":
+                    case "Expändäbl Series":
+                    case "Coming Soon":
+                    case "All Homes":
+                      return "/homes";
+                    case "NSW":
+                      return "/homes/nsw";
+                    case "QLD":
+                      return "/homes/qld";
+                    case "VIC":
+                      return "/homes/vic";
+                    default:
+                      return "#";
+                  }
+                };
+                const href = mapHref(link);
                 return (
                   <a
                     key={linkIndex}

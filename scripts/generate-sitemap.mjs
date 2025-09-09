@@ -2,7 +2,7 @@
 import { writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 
-const SITE_URL = process.env.SITE_URL?.replace(/\/$/, '') || 'https://foldabl.com';
+const SITE_URL = process.env.SITE_URL?.replace(/\/$/, '') || 'https://foldabl.com.au';
 
 // Define planned routes; expand as real pages are added
 const routes = [
@@ -13,6 +13,13 @@ const routes = [
   '/homes',
   '/service-areas',
   '/modular-homes',
+  '/council-approval',
+  '/homes/nsw',
+  '/homes/qld',
+  '/homes/vic',
+  '/homes/foldabl-studio',
+  '/homes/foldabl-42',
+  '/homes/expandabl-20',
   '/blog'
 ];
 

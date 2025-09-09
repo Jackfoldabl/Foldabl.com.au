@@ -24,6 +24,7 @@ const homeModels = [
     type: "27 sqm Studio",
     price: "From $60k",
     image: "/img/rectangle-5-4.png",
+    href: "/homes/foldabl-studio",
   },
   {
     id: 2,
@@ -31,6 +32,7 @@ const homeModels = [
     type: "Two Bedroom",
     size: "42.6 sqm",
     image: "/img/rectangle-5-2.svg",
+    href: "/homes/foldabl-42",
   },
   {
     id: 3,
@@ -38,6 +40,7 @@ const homeModels = [
     type: "Studio",
     size: "24.5 sqm",
     image: "/img/rectangle-5-3.png",
+    href: "/homes/expandabl-20",
   },
   {
     id: 4,
@@ -233,9 +236,13 @@ export const MobileHomepage = () => {
                       </a>
                     ))}
 
+                    <a href="tel:+61480758298" className="relative w-fit [font-family:'Poppins',Helvetica] font-medium text-collection-1-light text-base tracking-[-0.96px] leading-6 whitespace-nowrap hover:opacity-80 transition-opacity">
+                      0480 758 298
+                    </a>
+
                     <button className="inline-flex items-center gap-[11.2px] pl-[15.4px] pr-[3.8px] py-[3.8px] relative flex-[0_0_auto] bg-collection-1-light rounded-[9.6px] hover:bg-opacity-90 transition-all">
                       <span className="text-sm tracking-[-0.84px] leading-[21px] relative w-fit [font-family:'Poppins',Helvetica] font-medium text-collection-1-dark whitespace-nowrap">
-                        FREE CONSULTATION
+                        Get Free Consultation
                       </span>
 
                       <div className="flex w-[33.6px] h-[33.6px] items-center justify-center gap-[5.6px] relative bg-collection-1-button rounded-[4.8px] aspect-[1]">
@@ -257,7 +264,7 @@ export const MobileHomepage = () => {
                   <div className="w-[569px] flex items-start gap-2 relative flex-[0_0_auto]">
                     <button className="flex items-center justify-between pl-[22px] pr-1.5 py-1.5 relative flex-1 grow bg-collection-1-light rounded-2xl hover:bg-opacity-90 transition-all">
                       <span className="text-base tracking-[-0.96px] leading-6 relative w-fit [font-family:'Poppins',Helvetica] font-medium text-collection-1-dark whitespace-nowrap">
-                        FREE CONSULTATION
+                        Get Free Consultation
                       </span>
 
                       <div className="flex w-12 h-12 items-center justify-center gap-2 relative bg-collection-1-button rounded-[9px] aspect-[1]">
@@ -271,7 +278,7 @@ export const MobileHomepage = () => {
 
                     <button className="flex items-center justify-between pl-[22px] pr-1.5 py-1.5 relative flex-1 grow rounded-2xl border border-solid border-[#ffffff66] hover:bg-white hover:bg-opacity-10 transition-all">
                       <span className="relative w-fit [font-family:'Poppins',Helvetica] font-medium text-collection-1-light text-base tracking-[-0.96px] leading-6 whitespace-nowrap">
-                        SEE OUR HOMES
+                        See Our Homes
                       </span>
 
                       <div className="flex w-12 h-12 items-center justify-center gap-2 relative bg-collection-1-light rounded-[10px] aspect-[1]">
@@ -500,7 +507,7 @@ export const MobileHomepage = () => {
                           />
                         </button>
                       ) : (
-                        <button className="inline-flex items-center justify-center gap-8 pl-[22px] pr-1.5 py-1.5 relative flex-[0_0_auto] rounded-2xl border border-solid border-collection-1-dusk-steel hover:bg-collection-1-dusk-steel hover:bg-opacity-10 transition-all">
+                        <a href={model.href || "#"} className="inline-flex items-center justify-center gap-8 pl-[22px] pr-1.5 py-1.5 relative flex-[0_0_auto] rounded-2xl border border-solid border-collection-1-dusk-steel hover:bg-collection-1-dusk-steel hover:bg-opacity-10 transition-all">
                           <span className="relative w-fit [font-family:'Poppins',Helvetica] font-medium text-collection-1-dark text-base tracking-[-0.96px] leading-6 whitespace-nowrap">
                             VIEW DETAILS
                           </span>
@@ -512,7 +519,7 @@ export const MobileHomepage = () => {
                               src="/img/arrow-outward-20.png"
                             />
                           </div>
-                        </button>
+                        </a>
                       )}
                     </div>
                   </article>
@@ -865,7 +872,30 @@ ins',Helvetica] font-medium text-collection-1-dark text-base tracking-[-0.48px] 
                       </h4>
 
                       {section.links.map((link, linkIndex) => {
-                        const href = link === "Blogs & Guides" ? "/blog" : "#";
+                        const mapHref = (text) => {
+                          switch (text) {
+                            case "Blogs & Guides":
+                              return "/blog";
+                            case "Professional Builders":
+                              return "/about";
+                            case "Constructions Council Process":
+                              return "/process";
+                            case "Foldäbl Series":
+                            case "Expändäbl Series":
+                            case "Coming Soon":
+                            case "All Homes":
+                              return "/homes";
+                            case "NSW":
+                              return "/homes/nsw";
+                            case "QLD":
+                              return "/homes/qld";
+                            case "VIC":
+                              return "/homes/vic";
+                            default:
+                              return "#";
+                          }
+                        };
+                        const href = mapHref(link);
                         return (
                           <a
                             key={linkIndex}

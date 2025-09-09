@@ -1,13 +1,16 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { posts } from "../blog";
+import { setSeoTags } from "../lib/seo";
 
 export const BlogIndex = () => {
   useEffect(() => {
-    document.title = "Blog | Modular & Prefab Homes Australia | Foldabl Homes";
-    const canonicalHref = "https://foldabl.com/blog";
-    const link = document.querySelector("link[rel=canonical]");
-    if (link) link.setAttribute("href", canonicalHref);
+    setSeoTags({
+      title: "Blog | Modular & Prefab Homes Australia | Foldabl Homes",
+      description: "Expert advice on modular and prefab homes in Australia.",
+      url: "https://foldabl.com.au/blog",
+      image: "https://foldabl.com.au/img/rectangle-6-2.png",
+    });
   }, []);
 
   return (
@@ -47,4 +50,3 @@ export const BlogIndex = () => {
     </main>
   );
 };
-

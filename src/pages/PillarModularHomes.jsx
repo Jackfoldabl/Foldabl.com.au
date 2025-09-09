@@ -1,12 +1,16 @@
 import React, { useEffect } from "react";
+import { setSeoTags } from "../lib/seo";
 import { Link } from "react-router-dom";
 
 export const PillarModularHomes = () => {
   useEffect(() => {
-    document.title = "Modular Homes & Prefab Homes Australia | Foldabl Homes";
-    const canonicalHref = "https://foldabl.com/modular-homes";
-    const link = document.querySelector("link[rel=canonical]");
-    if (link) link.setAttribute("href", canonicalHref);
+    setSeoTags({
+      title: "Modular Homes & Prefab Homes Australia | Foldabl Homes",
+      description:
+        "Comprehensive guide to prefab modular homes in Australia: benefits, process, models, use cases, and service areas.",
+      url: "https://foldabl.com.au/modular-homes",
+      image: "https://foldabl.com.au/img/rectangle-6-2.png",
+    });
   }, []);
 
   const phoneDisplay = "0480 758 298";
@@ -231,4 +235,3 @@ export const PillarModularHomes = () => {
     </main>
   );
 };
-

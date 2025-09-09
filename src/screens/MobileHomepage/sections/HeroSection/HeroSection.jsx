@@ -71,7 +71,7 @@ export const HeroSection = () => {
 
       <img
         className="absolute w-[340px] h-[227px] top-20 left-6 object-cover"
-        alt="Home construction process overview"
+        alt="Dach Constructions installing modular home – NSW"
         src="/img/rectangle-6.png"
         loading="lazy"
         decoding="async"
@@ -79,7 +79,7 @@ export const HeroSection = () => {
 
       <img
         className="absolute w-[342px] h-[157px] top-[1649px] left-6"
-        alt="Completed home installation"
+        alt="Modular home exterior – Foldabl"
         src="/img/rectangle-7.png"
         loading="lazy"
         decoding="async"

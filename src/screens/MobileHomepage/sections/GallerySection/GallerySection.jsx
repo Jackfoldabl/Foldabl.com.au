@@ -73,7 +73,8 @@ export const GallerySection = () => {
               </p>
             </div>
 
-            <button
+            <a
+              href={index === 0 ? "/council-approval" : "/installation"}
               className="flex items-center justify-between pl-[19.8px] pr-[5.4px] py-[5.4px] relative self-stretch w-full flex-[0_0_auto] rounded-[14.4px] border-[0.9px] border-solid border-[#ffffff66] hover:bg-[#ffffff1a] transition-colors duration-200"
               aria-label={`Learn more about ${item.title}`}
             >
@@ -88,7 +89,7 @@ export const GallerySection = () => {
                   src="/img/arrow-outward-12.png"
                 />
               </div>
-            </button>
+            </a>
           </div>
         </article>
       ))}
