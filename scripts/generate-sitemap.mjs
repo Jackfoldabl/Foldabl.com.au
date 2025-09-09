@@ -17,9 +17,15 @@ const routes = [
   '/homes/nsw',
   '/homes/qld',
   '/homes/vic',
+  '/homes/sa',
+  '/homes/wa',
+  '/homes/tas',
+  '/homes/nt',
+  '/homes/act',
   '/homes/foldabl-studio',
   '/homes/foldabl-42',
   '/homes/expandabl-20',
+  '/tiny-homes',
   '/blog'
 ];
 
@@ -40,10 +46,21 @@ if (existsSync(manifestPath)) {
 
 const now = new Date().toISOString();
 
+function getPriority(path) {
+  if (path === '/') return '1.0';
+  if (/^\/(council-approval|installation)$/.test(path)) return '0.9';
+  if (/^\/homes\/(nsw|qld|vic|sa|wa|tas|nt|act)$/.test(path)) return '0.9';
+  const isModel = (/^\/homes\/(foldabl\-studio|foldabl\-42|expandabl\-20)$/).test(path);
+  if (path === '/modular-homes' || isModel) return '0.8';
+  if (path === '/blog' || path.startsWith('/blog/')) return '0.7';
+  return '0.7';
+}
+
 const urlset = [...routes, ...blogRoutes]
   .map((path) => {
     const loc = `${SITE_URL}${path}`;
-    return `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${now}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>${path === '/' ? '1.0' : '0.7'}</priority>\n  </url>`;
+    const priority = getPriority(path);
+    return `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${now}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>${priority}</priority>\n  </url>`;
   })
   .join('\n');
 

@@ -52,21 +52,46 @@
     <link rel="preload" as="image" href="/img/mueen-agherdien-t1u-dvo7nbo-unsplash-1-2.png" />
     <link rel="preload" as="image" href="/img/mueen-agherdien-t1u-dvo7nbo-unsplash-1.png" />
 
-    <!-- Structured Data: Organization + LocalBusiness -->
+    <!-- Structured Data: Organization + LocalBusiness (upgraded to HomeAndConstructionBusiness + ConstructionCompany with service/product catalog) -->
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["Organization","LocalBusiness"],
-  "name": "Foldabl",
+  "@type": ["Organization","LocalBusiness","HomeAndConstructionBusiness","ConstructionCompany"],
+  "@id": "https://foldabl.com.au/#organization",
+  "name": "Foldabl Homes",
   "url": "https://foldabl.com.au/",
   "logo": "https://foldabl.com.au/assets/logo.png",
   "telephone": "+61-480-758-298",
+  "brand": "Foldabl",
+  "slogan": "A home for every need, done once, done right",
   "areaServed": ["NSW","QLD","VIC","SA","WA","TAS","NT","ACT"],
   "sameAs": [],
   "description": "Professional builders delivering modular homes across Australia. Council approval, delivery and installation done-for-you.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressCountry": "AU"
+  "address": { "@type": "PostalAddress", "addressCountry": "AU" },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Foldabl Services and Products",
+    "itemListElement": [
+      {
+        "@type": "OfferCatalog",
+        "name": "Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Council Approval for Modular Homes", "areaServed": ["NSW","QLD","VIC","SA","WA","TAS","NT","ACT"] }, "priceCurrency": "AUD", "price": "2000", "description": "Deposit to commence approvals. Fully refundable if rejected." },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Modular Home Installation", "areaServed": ["NSW","QLD","VIC","SA","WA","TAS","NT","ACT"] }, "priceCurrency": "AUD", "price": "0", "priceSpecification": { "@type": "PriceSpecification", "priceCurrency": "AUD", "minPrice": 0 }, "description": "Licensed builders handle siting, services coordination, leveling and handover." },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Design & Model Selection Consultation" }, "priceCurrency": "AUD", "price": "0", "description": "Free consultation to select the best model for your site and goals." },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Australia‑Wide Delivery" }, "priceCurrency": "AUD", "price": "0", "description": "Coordinated transport and cranage planning across Australia." }
+        ]
+      },
+      {
+        "@type": "OfferCatalog",
+        "name": "Products",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Foldäbl Studio", "url": "https://foldabl.com.au/homes/foldabl-studio", "image": ["https://foldabl.com.au/img/rectangle-5.png"], "description": "27 sqm modular studio" }, "priceCurrency": "AUD", "price": "60000", "availability": "https://schema.org/PreOrder" },
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Foldäbl 42", "url": "https://foldabl.com.au/homes/foldabl-42", "image": ["https://foldabl.com.au/img/rectangle-5-2.svg"], "description": "Two‑bedroom, 42.6 sqm modular home" }, "priceCurrency": "AUD", "price": "60000", "availability": "https://schema.org/PreOrder" },
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Expändäbl 20", "url": "https://foldabl.com.au/homes/expandabl-20", "image": ["https://foldabl.com.au/img/rectangle-5-3.png"], "description": "Flexible studio (~20–24.5 sqm)" }, "priceCurrency": "AUD", "price": "60000", "availability": "https://schema.org/PreOrder" }
+        ]
+      }
+    ]
   }
 }
     </script>

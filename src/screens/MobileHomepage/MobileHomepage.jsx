@@ -167,7 +167,7 @@ const footerSections = [
   },
   {
     title: "SERVICE AREAS",
-    links: ["NSW", "QLD", "VIC", "All States"],
+    links: ["NSW", "QLD", "VIC", "SA", "WA", "TAS", "NT", "ACT", "All States"],
   },
   {
     title: "COMPANY",
@@ -891,6 +891,18 @@ ins',Helvetica] font-medium text-collection-1-dark text-base tracking-[-0.48px] 
                               return "/homes/qld";
                             case "VIC":
                               return "/homes/vic";
+                            case "SA":
+                              return "/homes/sa";
+                            case "WA":
+                              return "/homes/wa";
+                            case "TAS":
+                              return "/homes/tas";
+                            case "NT":
+                              return "/homes/nt";
+                            case "ACT":
+                              return "/homes/act";
+                            case "All States":
+                              return "/service-areas";
                             default:
                               return "#";
                           }

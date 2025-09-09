@@ -35,7 +35,7 @@ export const HomesVIC = () => {
         <div className="max-w-5xl mx-auto">
           <h1 className="text-3xl md:text-5xl font-medium tracking-tight">Modular Homes in VIC</h1>
           <ul className="mt-4 text-lg opacity-90 list-disc pl-6">
-            <li>~8-week delivery after approvals</li>
+            <li>~8–12 week delivery after approvals</li>
             <li>Approvals handled for you</li>
             <li>Licensed installation across Victoria</li>
           </ul>
@@ -50,13 +50,34 @@ export const HomesVIC = () => {
         <div className="max-w-5xl mx-auto space-y-10">
           <section>
             <h2 className="text-2xl md:text-3xl font-medium tracking-tight">Where We Deliver</h2>
-            <p className="mt-3">Melbourne, Geelong, Mornington Peninsula, Ballarat, Bendigo and broader VIC regions.</p>
+            <p className="mt-3">Melbourne, Geelong, Mornington Peninsula, Ballarat, Bendigo and broader VIC regions. We plan deliveries around local traffic patterns and coordinate cranage/traffic control in constrained sites or heritage streetscapes.</p>
           </section>
 
           <section>
             <h2 className="text-2xl md:text-3xl font-medium tracking-tight">Approvals in VIC</h2>
-            <p className="mt-3">We address overlays, setbacks and height/footprint controls, and manage council clarifications where required.</p>
+            <p className="mt-3">We address overlays, setbacks and height/footprint controls, and manage council clarifications where required. Victorian planning schemes consider neighbourhood character and amenity, and overlays (bushfire, flood, heritage, significant landscapes) may influence siting or construction detailing. We prepare clear documentation and respond to information requests to support a timely decision.</p>
             <p className="mt-3 text-sm">Learn more: <a href="/council-approval" className="underline">Council Approval</a></p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl md:text-3xl font-medium tracking-tight">Housing Demand & Use Cases</h2>
+            <p className="mt-3">VIC’s demand for smaller, efficient dwellings continues to grow as households seek flexible living options: supporting family, unlocking rental yield, or enabling work‑from‑home. Modular and tiny homes deliver predictable costs and timelines compared to lengthy renovations.</p>
+            <ul className="mt-2 list-disc pl-6">
+              <li><strong>Multigenerational living:</strong> Add a self‑contained studio for family support.</li>
+              <li><strong>Rental flexibility:</strong> Where rules permit, a granny flat can diversify household income.</li>
+              <li><strong>Professional workspace:</strong> A separated office or studio with minimal disruption.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl md:text-3xl font-medium tracking-tight">Land Use, Character & Overlays</h2>
+            <p className="mt-3">Local planning schemes balance development with neighbourhood character. Common topics we address include:</p>
+            <ul className="mt-2 list-disc pl-6">
+              <li><strong>Setbacks, height & site coverage:</strong> Ensuring bulk/scale suits context and privacy is protected.</li>
+              <li><strong>Overlays:</strong> Bushfire Management (BMO), flood, heritage and design development overlays.</li>
+              <li><strong>Services:</strong> Sewer connections, stormwater management and energy requirements.</li>
+            </ul>
+            <p className="mt-3">We tailor documentation to local policy to support good planning outcomes and smooth assessment.</p>
           </section>
 
           <section>
@@ -66,6 +87,26 @@ export const HomesVIC = () => {
               <li className="p-4 rounded-xl border border-collection-1-dusk-steel"><strong>Foldäbl 42</strong> — two-bedroom layout. <a href="/homes/foldabl-42" className="underline">View details</a></li>
               <li className="p-4 rounded-xl border border-collection-1-dusk-steel"><strong>Expändäbl 20</strong> — flexible studio. <a href="/homes/expandabl-20" className="underline">View details</a></li>
             </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl md:text-3xl font-medium tracking-tight">Access & Delivery Logistics</h2>
+            <p className="mt-3">For urban sites we validate crane positions, exclusion zones and traffic control. In regional areas we plan around road width, bridge load limits and seasonal conditions. We provide guidance on preparing foundations and ensuring services are ready for connection.</p>
+            <h3 className="mt-4 text-xl font-medium">Prep Checklist</h3>
+            <ul className="mt-2 list-disc pl-6">
+              <li>Confirm crane setup area and overhead clearances</li>
+              <li>Establish pad/foundations per engineering</li>
+              <li>Plan trench routes for water, power and wastewater</li>
+              <li>Verify setbacks and height within local controls</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl md:text-3xl font-medium tracking-tight">FAQs</h2>
+            <div className="mt-3 space-y-3">
+              <div><h3 className="text-xl font-medium">Can I add a tiny home in a heritage area?</h3><p className="mt-1">Often possible with sensitive siting and finishes; we address overlay requirements with clear documentation.</p></div>
+              <div><h3 className="text-xl font-medium">How long will the process take?</h3><p className="mt-1">Approvals vary by council and constraints. Manufacturing is typically ~8 weeks after approvals, with 1–5 days for installation.</p></div>
+            </div>
           </section>
         </div>
       </article>

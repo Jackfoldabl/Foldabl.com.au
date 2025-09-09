@@ -21,7 +21,7 @@ export const Installation = () => {
       "@context": "https://schema.org",
       "@type": "Service",
       name: "Modular Home Installation",
-      provider: { "@type": "Organization", name: "Foldabl" },
+      provider: { "@type": "Organization", "@id": "https://foldabl.com.au/#organization" },
       areaServed: ["NSW","QLD","VIC","SA","WA","TAS","NT","ACT"],
       description: "Licensed builders handle siting, services coordination, leveling and final handover."
     });
@@ -87,4 +87,3 @@ export const Installation = () => {
     </main>
   );
 };
-

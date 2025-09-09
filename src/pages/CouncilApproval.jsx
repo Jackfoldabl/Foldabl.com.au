@@ -22,7 +22,7 @@ export const CouncilApproval = () => {
       "@context": "https://schema.org",
       "@type": "Service",
       name: "Council Approval for Modular Homes",
-      provider: { "@type": "Organization", name: "Foldabl" },
+      provider: { "@type": "Organization", "@id": "https://foldabl.com.au/#organization" },
       areaServed: ["NSW","QLD","VIC","SA","WA","TAS","NT","ACT"],
       termsOfService: "https://foldabl.com.au/terms",
       hasOfferCatalog: {
@@ -160,4 +160,3 @@ export const CouncilApproval = () => {
     </main>
   );
 };
-

@@ -10,10 +10,17 @@ import { CouncilApproval } from "./pages/CouncilApproval";
 import { HomesNSW } from "./pages/HomesNSW";
 import { HomesQLD } from "./pages/HomesQLD";
 import { HomesVIC } from "./pages/HomesVIC";
+import { HomesSA } from "./pages/HomesSA";
+import { HomesWA } from "./pages/HomesWA";
+import { HomesTAS } from "./pages/HomesTAS";
+import { HomesNT } from "./pages/HomesNT";
+import { HomesACT } from "./pages/HomesACT";
 import { Installation } from "./pages/Installation";
 import { FoldablStudio } from "./pages/models/FoldablStudio";
 import { Foldabl42 } from "./pages/models/Foldabl42";
 import { Expandabl20 } from "./pages/models/Expandabl20";
+import { TinyHomes } from "./pages/TinyHomes";
+import { ServiceAreas } from "./pages/ServiceAreas";
 
 createRoot(document.getElementById("app")).render(
   <StrictMode>
@@ -27,10 +34,17 @@ createRoot(document.getElementById("app")).render(
         <Route path="/homes/nsw" element={<HomesNSW />} />
         <Route path="/homes/qld" element={<HomesQLD />} />
         <Route path="/homes/vic" element={<HomesVIC />} />
+        <Route path="/homes/sa" element={<HomesSA />} />
+        <Route path="/homes/wa" element={<HomesWA />} />
+        <Route path="/homes/tas" element={<HomesTAS />} />
+        <Route path="/homes/nt" element={<HomesNT />} />
+        <Route path="/homes/act" element={<HomesACT />} />
         <Route path="/installation" element={<Installation />} />
         <Route path="/homes/foldabl-studio" element={<FoldablStudio />} />
         <Route path="/homes/foldabl-42" element={<Foldabl42 />} />
         <Route path="/homes/expandabl-20" element={<Expandabl20 />} />
+        <Route path="/tiny-homes" element={<TinyHomes />} />
+        <Route path="/service-areas" element={<ServiceAreas />} />
       </Routes>
       {/* Sticky call button on mobile */}
       <a

@@ -35,7 +35,7 @@ export const HomesQLD = () => {
         <div className="max-w-5xl mx-auto">
           <h1 className="text-3xl md:text-5xl font-medium tracking-tight">Modular Homes in QLD</h1>
           <ul className="mt-4 text-lg opacity-90 list-disc pl-6">
-            <li>~8-week delivery after approvals</li>
+            <li>~8–12 week delivery after approvals</li>
             <li>Approvals handled for you</li>
             <li>Licensed installation across Queensland</li>
           </ul>
@@ -50,13 +50,35 @@ export const HomesQLD = () => {
         <div className="max-w-5xl mx-auto space-y-10">
           <section>
             <h2 className="text-2xl md:text-3xl font-medium tracking-tight">Where We Deliver</h2>
-            <p className="mt-3">Brisbane, Gold Coast, Sunshine Coast, Toowoomba and broader QLD regions.</p>
+            <p className="mt-3">Brisbane, Gold Coast, Sunshine Coast, Toowoomba, Ipswich and broader QLD regions. We schedule delivery to suit local conditions (heat, storms) and coordinate cranage/traffic management for narrow streets or busy corridors.</p>
           </section>
 
           <section>
             <h2 className="text-2xl md:text-3xl font-medium tracking-tight">Approvals in QLD</h2>
-            <p className="mt-3">We align documentation to local planning provisions and definitions; parking provisions and controls can vary by council.</p>
+            <p className="mt-3">We align documentation to local planning provisions and definitions; parking and site coverage controls vary by council. Compact dwellings and secondary dwellings are typically assessed against your council’s planning scheme with local performance outcomes. Where overlays apply (flood, bushfire, coastal erosion), we address siting and construction responses explicitly. We manage lodgement and responses to information requests so your application stays on track.</p>
             <p className="mt-3 text-sm">Learn more: <a href="/council-approval" className="underline">Council Approval</a></p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl md:text-3xl font-medium tracking-tight">Housing Demand & Use Cases</h2>
+            <p className="mt-3">Queensland combines strong urban growth (SEQ) with regional lifestyle markets. Many households are adding compact dwellings to support multigenerational living, create home offices or generate rental income. Modular and tiny homes make it faster to respond to changes in family needs while maintaining compliance and quality.</p>
+            <ul className="mt-2 list-disc pl-6">
+              <li><strong>Family support:</strong> Independent space for parents or adult children on the same property.</li>
+              <li><strong>Rental yields:</strong> Granny flats and studios can provide additional income where permitted.</li>
+              <li><strong>Work from home:</strong> Separated, quiet workspace with lower disruption than renovations.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl md:text-3xl font-medium tracking-tight">Land Use, Zoning & Overlays</h2>
+            <p className="mt-3">Each QLD council administers its planning scheme with zones such as low‑density residential, medium density, rural residential and more. Common considerations include:</p>
+            <ul className="mt-2 list-disc pl-6">
+              <li><strong>Secondary dwelling rules:</strong> Definitions, size limits and whether separate renting is allowed differ by council.</li>
+              <li><strong>Setbacks/height/site cover:</strong> Protection of neighbourhood character and privacy.</li>
+              <li><strong>Overlays:</strong> Flood hazard, bushfire hazard, landslide and coastal risks.</li>
+              <li><strong>Services:</strong> Sewer connections vs onsite wastewater; power capacity and trenching routes.</li>
+            </ul>
+            <p className="mt-3">We design and document to satisfy these controls and supply clear responses for assessment officers.</p>
           </section>
 
           <section>
@@ -66,6 +88,26 @@ export const HomesQLD = () => {
               <li className="p-4 rounded-xl border border-collection-1-dusk-steel"><strong>Foldäbl 42</strong> — two-bedroom layout. <a href="/homes/foldabl-42" className="underline">View details</a></li>
               <li className="p-4 rounded-xl border border-collection-1-dusk-steel"><strong>Expändäbl 20</strong> — flexible studio. <a href="/homes/expandabl-20" className="underline">View details</a></li>
             </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl md:text-3xl font-medium tracking-tight">Access & Delivery Logistics</h2>
+            <p className="mt-3">We plan delivery around SEQ traffic and regional constraints. For hilly or narrow streets we review powerlines, street trees and crane setup areas. In coastal zones we account for soft ground and wind conditions, scheduling appropriate rigging and ground protection.</p>
+            <h3 className="mt-4 text-xl font-medium">Prep Checklist</h3>
+            <ul className="mt-2 list-disc pl-6">
+              <li>Clear access: vehicle turning and overhead clearance</li>
+              <li>Crane setup: level base, exclusion zone, traffic management if required</li>
+              <li>Services: trench routes for power/water/wastewater</li>
+              <li>Foundations/pad: per engineering, within setback/height limits</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl md:text-3xl font-medium tracking-tight">FAQs</h2>
+            <div className="mt-3 space-y-3">
+              <div><h3 className="text-xl font-medium">Can I rent out a secondary dwelling in QLD?</h3><p className="mt-1">Some councils permit renting; others restrict secondary dwellings to related occupants. We’ll advise based on your planning scheme.</p></div>
+              <div><h3 className="text-xl font-medium">Do you help with flood overlays?</h3><p className="mt-1">Yes. We reference your council’s flood hazard mapping and incorporate minimum floor levels and siting responses where applicable.</p></div>
+            </div>
           </section>
         </div>
       </article>

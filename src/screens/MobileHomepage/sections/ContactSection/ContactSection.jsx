@@ -26,7 +26,17 @@ export const ContactSection = () => {
     "All Homes",
   ];
 
-  const serviceAreasLinks = ["NSW", "QLD", "VIC", "All States"];
+  const serviceAreasLinks = [
+    "NSW",
+    "QLD",
+    "VIC",
+    "SA",
+    "WA",
+    "TAS",
+    "NT",
+    "ACT",
+    "All States",
+  ];
 
   const companyLinks = ["About Chris", "Dach", "30+ Years", "Contact"];
 
@@ -152,7 +162,27 @@ export const ContactSection = () => {
                       return "#";
                   }
                 };
-                const href = mapHref(link);
+                const href = (() => {
+                  switch (link) {
+                    case "NSW": return "/homes/nsw";
+                    case "QLD": return "/homes/qld";
+                    case "VIC": return "/homes/vic";
+                    case "SA": return "/homes/sa";
+                    case "WA": return "/homes/wa";
+                    case "TAS": return "/homes/tas";
+                    case "NT": return "/homes/nt";
+                    case "ACT": return "/homes/act";
+                    case "All States": return "/service-areas";
+                    case "Blogs & Guides": return "/blog";
+                    case "Professional Builders": return "/about";
+                    case "Constructions Council Process": return "/process";
+                    case "Foldäbl Series":
+                    case "Expändäbl Series":
+                    case "Coming Soon":
+                    case "All Homes": return "/homes";
+                    default: return "#";
+                  }
+                })();
                 return (
                   <a
                     key={linkIndex}
