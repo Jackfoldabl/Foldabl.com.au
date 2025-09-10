@@ -9,9 +9,9 @@
     "gen:sitemap": "node scripts/generate-sitemap.mjs",
     "prebuild": "npm run gen:sitemap",
     "build": "vite build",
-    "build:vercel": "npm run gen:sitemap && vite build",
-        "postbuild": "sh -c 'if [ \"$PRERENDER\" = \"true\" ]; then react-snap; else echo Skipping prerender; fi'",
-        "images:convert": "node scripts/convert-images.mjs"
+    "build:vercel": "node scripts/build-vercel.mjs",
+    "postbuild": "sh -c 'if [ \"$PRERENDER\" = \"true\" ] && command -v google-chrome-stable >/dev/null 2>&1; then react-snap; else echo Skipping prerender - Chrome not available or PRERENDER not enabled; fi'",
+    "images:convert": "node scripts/convert-images.mjs"
   },
   "dependencies": {
     "clsx": "2.1.1",
@@ -37,7 +37,15 @@
     "source": "dist",
     "destination": "dist",
     "inlineCss": true,
-    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
+    "puppeteerArgs": [
+      "--no-sandbox", 
+      "--disable-setuid-sandbox",
+      "--disable-dev-shm-usage",
+      "--disable-accelerated-2d-canvas",
+      "--disable-gpu",
+      "--window-size=1920x1080"
+    ],
+    "puppeteerExecutablePath": "/usr/bin/google-chrome-stable",
     "include": [
       "/",
       "/modular-homes",

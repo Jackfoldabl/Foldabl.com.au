@@ -1,8 +1,11 @@
 {
   "framework": "vite",
-  "buildCommand": "npm run build",
+  "buildCommand": "npm run build:vercel",
   "outputDirectory": "dist",
   "installCommand": "npm install",
+  "env": {
+    "PRERENDER": "false"
+  },
   "redirects": [
     {
       "source": "/(.*)",
